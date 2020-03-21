@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // data set. This will trigger the ListView to update.
         if (news != null && !news.isEmpty()) {
             mAdapter.notifyDataSetChanged();
+        }else {
+            mEmptyStateTextView.setText(R.string.no_news);
         }
     }
 
